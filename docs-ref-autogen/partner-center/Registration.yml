@@ -1,0 +1,26 @@
+### YamlMime:RESTOperationGroup
+uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration
+name: Registration
+apiVersion: v1
+service: Partner Center Rest
+operations:
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.internalapp_get
+  summary: Gets the tenant's registration
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.internalapp_getvalidationevent
+  summary: Retrieves the status of a test webhook given the correlationId
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.internalapp_post
+  summary: Creates the user's tenant registration.
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.internalapp_postvalidationevent
+  summary: Creates a test event to be delivered as a webhook
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.internalapp_put
+  summary: Updates the user's tenant registration.
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.partner_get
+  summary: Gets the tenant's registration
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.partner_getvalidationevent
+  summary: Retrieves the status of a test webhook given the correlationId
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.partner_post
+  summary: Creates the user's tenant registration.
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.partner_postvalidationevent
+  summary: Creates a test event to be delivered as a webhook
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.partner_put
+  summary: Updates the user's tenant registration.

@@ -1,0 +1,18 @@
+{
+  "Audit/Gets the audit records for a given date range. If the number of records exceeds the page size, a continuation token is returned. The continuation token can be used to get the next page of audit records..yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/AuditService.json#L20",
+  "Audit/Retrieves an audit record which corresponds to the provided Id value..yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/AuditService.json#L138"
+}
+{
+  "Registration/InternalApp_Get.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L229",
+  "Registration/InternalApp_GetValidationEvent.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L507",
+  "Registration/InternalApp_Post.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L361",
+  "Registration/InternalApp_PostValidationEvent.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L638",
+  "Registration/InternalApp_Put.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L289",
+  "Registration/Partner_Get.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L20",
+  "Registration/Partner_GetValidationEvent.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L438",
+  "Registration/Partner_Post.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L152",
+  "Registration/Partner_PostValidationEvent.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L576",
+  "Registration/Partner_Put.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L80",
+  "RegistrationEvents/InternalApp_Get.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L765",
+  "RegistrationEvents/Partner_Get.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L700"
+}

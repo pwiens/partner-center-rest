@@ -1,0 +1,10 @@
+### YamlMime:RESTOperationGroup
+uid: api.partnercenter.microsoft.com.webhooks.partner-center.registrationevents
+name: Registration Events
+apiVersion: v1
+service: Partner Center Rest
+operations:
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registrationevents.internalapp_get
+  summary: List of all events.
+- uid: api.partnercenter.microsoft.com.webhooks.partner-center.registrationevents.partner_get
+  summary: List of all events.

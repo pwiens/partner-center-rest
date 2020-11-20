@@ -1,0 +1,108 @@
+### YamlMime:RESTOperation
+uid: api.partnercenter.microsoft.com.webhooks.partner-center.registration.internalapp_getvalidationevent
+name: InternalApp GetValidationEvent
+service: Partner Center Rest
+groupName: Registration
+apiVersion: v1
+summary: Retrieves the status of a test webhook given the correlationId
+consumes: []
+produces:
+- application/json
+- text/json
+paths:
+- content: GET https://api.partnercenter.microsoft.com/webhooks/v{version}/internalApp/registration/validationEvents/{correlationId}
+uriParameters:
+- name: version
+  in: path
+  isRequired: true
+  types:
+  - uid: string
+- name: correlationId
+  in: path
+  isRequired: true
+  description: CorrelationId returned from the original test method
+  types:
+  - uid: string
+responses:
+- name: 200 OK
+  description: OK
+  types:
+  - uid: WebhookValidationEvent
+- name: 400 Bad Request
+  description: There was a missing or an invalid input.The response body will provide the error details.
+- name: 404 Not Found
+  description: The resource is not found or not available with the given input parameters.
+- name: 500 Internal Server Error
+  description: The partner API service or one of its dependencies failed to fulfill the request. Callers may retry this.
+- name: 401 Unauthorized
+  description: The request was not authenticated. The client needs to authenticate with the partner API service first.
+- name: 403 Forbidden
+  description: The request was authenticated but was refused since the caller does not have the rights to invoke it.
+requestHeader:
+- name: Authorization
+  in: header
+  isRequired: true
+  description: Bearer authentication token
+  types:
+  - uid: string
+- name: ms-correlationid
+  in: header
+  description: A unique identifier for the call, useful in logs and network traces for troubleshooting errors. The value should be reset for every call. All operations should include this header.
+  types:
+  - uid: string
+- name: ms-requestid
+  in: header
+  description: A unique identifier for the call, used to ensure idempotency. In the case of a timeout, the retry call should include the same value. Upon receiving a response (success or business failure), the value should be reset for the next call.
+  types:
+  - uid: string
+definitions:
+- name: WebhookValidationEvent
+  kind: object
+  properties:
+  - name: correlationId
+    description: ''
+    types:
+    - uid: string
+  - name: partnerId
+    description: ''
+    types:
+    - uid: string
+  - name: status
+    description: ''
+    types:
+    - uid: string
+  - name: callbackUrl
+    description: ''
+    types:
+    - uid: string
+  - name: results
+    description: ''
+    types:
+    - uid: WebhookResponse
+      isArray: true
+- name: WebhookResponse
+  kind: object
+  properties:
+  - name: responseCode
+    description: ''
+    types:
+    - uid: string
+  - name: responseMessage
+    description: ''
+    types:
+    - uid: string
+  - name: systemError
+    description: ''
+    types:
+    - uid: boolean
+  - name: dateTimeUtc
+    description: ''
+    types:
+    - uid: string
+examples: []
+security:
+- name: Authorization
+  type: apiKey
+  description: Bearer authentication token
+  in: header
+errorCodes: []

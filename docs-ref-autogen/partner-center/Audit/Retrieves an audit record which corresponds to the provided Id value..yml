@@ -1,0 +1,199 @@
+### YamlMime:RESTOperation
+uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.retrievesanauditrecordwhichcorrespondstotheprovidedidvalue
+name: Retrieves an audit record which corresponds to the provided Id value.
+service: Partner Center Rest
+groupName: Audit
+apiVersion: v1
+summary: Gets the audit record for the provided Id.
+consumes: []
+produces:
+- application/json
+- text/json
+paths:
+- content: GET https://api.partnercenter.microsoft.com/auditactivity/v{version}/auditrecords/{id}
+uriParameters:
+- name: version
+  in: path
+  isRequired: true
+  types:
+  - uid: string
+- name: id
+  in: path
+  isRequired: true
+  description: Id of the record to be retrieved
+  types:
+  - uid: string
+responses:
+- name: 200 OK
+  description: 'The request was successful. The response body contains an audit record matching the Id or null if the record does not exist. '
+  types:
+  - uid: AuditRecord
+- name: 400 Bad Request
+  description: There was a missing or an invalid input. The response body will provide the error details.
+- name: 404 Not Found
+  description: The resource is not found or not available with the given input parameters.
+- name: 500 Internal Server Error
+  description: The partner API service or one of its dependencies failed to fulfill the request. Callers may retry this.
+- name: 401 Unauthorized
+  description: The request was not authenticated. The client needs to authenticate with the partner API service first.
+- name: 403 Forbidden
+  description: The request was authenticated but was refused since the caller does not have the rights to invoke it.
+requestHeader:
+- name: Authorization
+  in: header
+  isRequired: true
+  description: Bearer authentication token
+  types:
+  - uid: string
+- name: ms-correlationid
+  in: header
+  description: Correlation Id
+  types:
+  - uid: string
+- name: ms-requestid
+  in: header
+  description: Request Id
+  types:
+  - uid: string
+- name: Authorization
+  in: header
+  isRequired: true
+  description: 'Append Authorization token. Format: Bearer %token%'
+  types:
+  - uid: string
+definitions:
+- name: AuditRecord
+  kind: object
+  properties:
+  - name: id
+    description: ''
+    types:
+    - uid: string
+  - name: partnerId
+    description: ''
+    types:
+    - uid: string
+  - name: customerId
+    description: ''
+    types:
+    - uid: string
+  - name: customerName
+    description: ''
+    types:
+    - uid: string
+  - name: userPrincipalName
+    description: ''
+    types:
+    - uid: string
+  - name: applicationId
+    description: ''
+    types:
+    - uid: string
+  - name: sessionId
+    description: ''
+    types:
+    - uid: string
+  - name: resourceType
+    description: ''
+    types:
+    - uid: customer
+    - uid: customer_user
+    - uid: order
+    - uid: subscription
+    - uid: license
+    - uid: third_party_add_on
+    - uid: mpn_association
+    - uid: transfer
+    typesTitle: enum
+  - name: resourceOldValue
+    description: ''
+    types:
+    - uid: string
+  - name: resourceNewValue
+    description: ''
+    types:
+    - uid: string
+  - name: operationType
+    description: ''
+    types:
+    - uid: update_customer_qualification
+    - uid: update_subscription
+    - uid: upgrade_subscription
+    - uid: convert_trial_subscription
+    - uid: add_customer
+    - uid: update_customer_billing_profile
+    - uid: update_customer_partner_contract_company_name
+    - uid: update_customer_spending_budget
+    - uid: delete_customer
+    - uid: remove_partner_customer_relationship
+    - uid: create_order
+    - uid: update_order
+    - uid: create_customer_user
+    - uid: delete_customer_user
+    - uid: update_customer_user
+    - uid: update_customer_user_licenses
+    - uid: reset_customer_user_password
+    - uid: update_customer_user_principal_name
+    - uid: restore_customer_user
+    - uid: create_mpn_association
+    - uid: update_mpn_association
+    - uid: update_sfb_customer_user_licenses
+    - uid: update_transfer
+    typesTitle: enum
+  - name: originalCorrelationId
+    description: ''
+    types:
+    - uid: string
+  - name: operationDate
+    description: ''
+    types:
+    - uid: string
+  - name: operationStatus
+    description: ''
+    types:
+    - uid: succeeded
+    - uid: failed
+    - uid: progress
+    - uid: decline
+    typesTitle: enum
+  - name: customizedData
+    description: ''
+    types:
+    - uid: KeyValuePair[String,String]
+      isArray: true
+  - name: attributes
+    isReadyOnly: true
+    description: ''
+    types:
+    - uid: ResourceAttributes
+- name: KeyValuePair[String,String]
+  kind: object
+  properties:
+  - name: key
+    isReadyOnly: true
+    description: ''
+    types:
+    - uid: string
+  - name: value
+    isReadyOnly: true
+    description: ''
+    types:
+    - uid: string
+- name: ResourceAttributes
+  kind: object
+  properties:
+  - name: etag
+    description: ''
+    types:
+    - uid: string
+  - name: objectType
+    description: ''
+    types:
+    - uid: string
+examples: []
+security:
+- name: Authorization
+  type: apiKey
+  description: Bearer authentication token
+  in: header
+errorCodes: []
