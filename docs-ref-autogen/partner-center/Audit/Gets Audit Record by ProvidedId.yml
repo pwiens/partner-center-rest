@@ -1,6 +1,6 @@
 ### YamlMime:RESTOperation
-uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getauditrecordbyprovidedid
-name: Get audit record by providedId
+uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getsauditrecordbyprovidedid
+name: Gets Audit Record by ProvidedId
 service: Partner Center Rest
 groupName: Audit
 apiVersion: v1

@@ -1,8 +1,8 @@
 # Partner Center Rest
 ## Audit
 ### [Overview](partner-center/Audit.yml)
-### [Get audit record by providedId](partner-center/Audit/Get%20audit%20record%20by%20providedId.yml)
-### [Gets the audit records](partner-center/Audit/Gets%20the%20audit%20records.yml)
+### [Gets Audit Record by ProvidedId](partner-center/Audit/Gets%20Audit%20Record%20by%20ProvidedId.yml)
+### [Gets Audit Records](partner-center/Audit/Gets%20Audit%20Records.yml)
 ## Registration
 ### [Overview](partner-center/Registration.yml)
 ### [InternalApp Get](partner-center/Registration/InternalApp_Get.yml)

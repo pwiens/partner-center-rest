@@ -4,9 +4,9 @@ name: Audit
 apiVersion: v1
 service: Partner Center Rest
 operations:
-- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getauditrecordbyprovidedid
+- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getsauditrecordbyprovidedid
   summary: Gets the audit record for the provided Id.
-- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getstheauditrecords
+- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getsauditrecords
   summary: >-
     Gets the audit records between a given date range
 
