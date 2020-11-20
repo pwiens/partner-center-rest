@@ -4,12 +4,12 @@ name: Audit
 apiVersion: v1
 service: Partner Center Rest
 operations:
-- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getstheauditrecordsforagivendaterange.ifthenumberofrecordsexceedsthepagesize,acontinuationtokenisreturned.thecontinuationtokencanbeusedtogetthenextpageofauditrecords
+- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getauditrecordbyprovidedid
+  summary: Gets the audit record for the provided Id.
+- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.getstheauditrecords
   summary: >-
     Gets the audit records between a given date range
 
     If the number of records is more than a page full, a continuation token will be returned and the continuation token can be used to get the next set of audit records.
 
     This service only supports AuditRecord retrieval for the last 90 days and a maximum window of 30 days.
-- uid: api.partnercenter.microsoft.com.auditactivity.partner-center.audit.retrievesanauditrecordwhichcorrespondstotheprovidedidvalue
-  summary: Gets the audit record for the provided Id.

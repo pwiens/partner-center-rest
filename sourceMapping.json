@@ -1,6 +1,6 @@
 {
-  "Audit/Gets the audit records for a given date range. If the number of records exceeds the page size, a continuation token is returned. The continuation token can be used to get the next page of audit records..yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/AuditService.json#L20",
-  "Audit/Retrieves an audit record which corresponds to the provided Id value..yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/AuditService.json#L138"
+  "Audit/Get audit record by providedId.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/AuditService.json#L138",
+  "Audit/Gets the audit records.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/AuditService.json#L20"
 }
 {
   "Registration/InternalApp_Get.yml": "https://github.com/MicrosoftDocs/partner-center-sdk-pr/blob/master/rest-swagger-specs/Webhooks.json#L229",
