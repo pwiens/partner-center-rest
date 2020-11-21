@@ -45,6 +45,9 @@
       "ms.topic": "reference",
       "ms.devlang": "rest-apis",
       "ms.date": "10/28/2020",
+      "ms.service": "partner-dashboard",
+      "ms.subservice": "partnercenter-sdk",
+      "searchScope": [ "Partner Center","REST", "Partner Center developer resources" ],
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
